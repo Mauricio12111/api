@@ -1,0 +1,184 @@
+/* public/css/admin.css */
+
+/* --- Styles Généraux et Typographie --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 40px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* --- Styles des Formulaires et Boutons --- */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+form input[type="text"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#submit-teach {
+    background-color: #007bff;
+    color: white;
+}
+
+#submit-teach:hover {
+    background-color: #0056b3;
+}
+
+.message-box {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- Styles des Tables et de la File d'Attente --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+/* --- Boutons d'Action dans la Table --- */
+.action-buttons button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+}
+
+.btn-teach {
+    background-color: #28a745; /* Vert */
+    color: white;
+}
+
+.btn-teach:hover {
+    background-color: #218838;
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Rouge */
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* --- Section de Contrôle du Serveur --- */
+#server-control {
+    text-align: center;
+}
+
+#ping-status-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
